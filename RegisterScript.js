@@ -7,44 +7,44 @@ let add = document.getElementById("address")
 
 function registerUser()
 {
-	console.log("Usernae : "+uname.value);
-	console.log("Password : "+pass.value);
-	alert(uname.value);
-	alert(pass.value);
+	// console.log("Usernae : "+uname.value);
+	// console.log("Password : "+pass.value);
+	// alert(uname.value);
+	// alert(pass.value);
 
-	/*let userData={
-		// username:uname.value,
-		// password:pass.value,
-		// address:add.value,
-		// hons:grad.value,
-		// branch:brnch.value,
-		// yop:yop.value
+	let userData={
+		username:uname.value,
+		password:pass.value,
+		address:add.value,
+		hons:grad.value,
+		branch:brnch.value,
+		yop:yop.value
 
-		console.log(uname.value),
-		console.log(pass.value),
-		console.log(add.value),
-		console.log(grad.value),
-		console.log(brnch.value),
-		console.log(yop.value)
+		// console.log(uname.value),
+		// console.log(pass.value),
+		// console.log(add.value),
+		// console.log(grad.value),
+		// console.log(brnch.value),
+		// console.log(yop.value)
 	}
 
-	saveData(userData);*/
-	// clearField();
+	saveData(userData);
+	clearField();
 }
 
-// function clearField()
-// {
-// 	uname.value="";
-// 	pass.value="";
-// 	grad.value="";
-// 	brnch.value="";
-// 	yop.value="";
-// 	add.value="";
-// }
+function clearField()
+{
+	uname.value="";
+	pass.value="";
+	grad.value="";
+	brnch.value="";
+	yop.value="";
+	add.value="";
+}
 
-// registerUser();
+registerUser();
 
 
-// function saveData(userData){
-// 	localStorage.setItem("userData",JSON.stringify(userData));
-// }
+function saveData(userData){
+	localStorage.setItem("userData",JSON.stringify(userData));
+}
