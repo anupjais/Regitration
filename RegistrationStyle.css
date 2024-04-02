@@ -1,0 +1,12 @@
+.container
+{
+	background-color: whitesmoke;
+	height: 500px;
+/*	width: 700px;*/
+	width: 50%;
+/*	height: 95%;*/
+	margin-top: 5&;
+	padding: 20PX;
+	border-radius: 20px;
+/*	margin: 10px;*/
+}
